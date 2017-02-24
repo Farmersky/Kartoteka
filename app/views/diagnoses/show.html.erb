@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name clinic:</strong>
+  <%= @diagnosis.name_clinic %>
+</p>
+
+<p>
+  <strong>Date diagnosis:</strong>
+  <%= @diagnosis.date_diagnosis %>
+</p>
+
+<p>
+  <strong>Disease:</strong>
+  <%= @diagnosis.disease.name %>
+</p>
+
+<p>
+  <strong>Patient: </strong>
+  <%= @diagnosis.patient.name %> <%= @diagnosis.patient.lastname %> 
+</p>
+
+<p>
+  <strong>Doctor:</strong>
+  <%= @diagnosis.doctor.name %> <%= @diagnosis.doctor.lastname %>
+</p>
+
+<%= link_to 'Edit', edit_diagnosis_path(@diagnosis) %> |
+<%= link_to 'Back', diagnoses_path %>
